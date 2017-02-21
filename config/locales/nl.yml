@@ -1,0 +1,391 @@
+# author: https://github.com/frenkel
+nl:
+  language_name: Nederlands
+# layouts/application
+  new_ticket: Nieuw ticket
+  inbox: Inbox
+  mine: Van mij
+  closed_tickets: Gesloten
+  trashed: Prullenbak
+  users: Gebruikers
+  rules: Regels
+  personal_settings: Persoonlijke instellingen
+  sign_out: Uitloggen
+  delete: Verwijderen
+  close: Sluiten
+  wait: Wachten
+  to: Tot
+
+  joyride:
+    tickets: Via deze knop kan iedereen nieuwe tickets aanmaken.
+    personal_settings: Stel je handtekening, tijdzone en andere instellingen in via dit menu.
+    labels: Na het toevoegen van labels aan tickets of medewerkers verschijnen ze hier. Je kunt ze gebruiken om te filteren. Nieuwe labels maak je op een ticket pagina.
+    rules: Voeg automatisch labels toe, wijs tickets toe aan medewerkers, wijzig de status van een ticket, etcetera.
+    users: Voeg meer medewerkers of normale gebruikers toe.
+    final: Bedankt voor het gebruiken van Brimir!
+    next: Volgende
+    previous: Vorige
+    end: Aan de slag!
+
+# devise/sessions/new
+  sign_in: Inloggen in Brimir
+
+# devise/shared/links
+  forgot_password: Wachtwoord vergeten?
+
+# devise/passwords/new
+  send_instructions: Stuur instructies
+
+# devise/passwords/edit
+  change_password: Wachtwoord wijzigen
+  new_password: Nieuw wachtwoord
+  new_password_confirmation: Bevestig nieuw wachtwoord
+
+# devise/mailer/reset_password_instructions
+  hello: Hallo
+  someone_requested_link: Iemand heeft een link opgevraagd om je wachtwoord te wijzigen, dat kun je doen met de link hieronder.
+  ignore_if_not_requested: Als je dit niet hebt opgevraagd, negeer dan deze e-mail.
+  password_wont_change_without_opening_link: Je wachtwoord veranderd niet totdat je via de link een nieuw wachtwoord aanmaakt.
+
+# tickets/index
+  count_tickets:
+    one: '%{count} ticket'
+    other: '%{count} tickets'
+  count_tickets_containing:
+    one: '%{count} ticket overeenkomend met'
+    other: '%{count} tickets overeenkomend met'
+  priority: Prioriteit
+  replies: reacties
+  no_subject: Geen onderwerp
+  unassigned: Niet toegewezen
+  no_tickets_found: Geen tickets gevonden.
+  search: Zoek
+  filter: Filter
+  minutes: minuten
+  are_you_sure_empty_trash: Alle tickets uit de prullenbak verwijderen?
+  locked_by_user: Ticket momenteel in behandling door %{user}
+  ticket_id_created_by_at: '#%{id} gemaakt door %{user} op %{at}'
+
+# tickets/show
+  add: Toevoegen
+  ticket_by_at: Door %{email} op %{at}
+  to_email: to %{email}
+  no_content: Geen inhoud
+  ticket_id: Ticketnummer
+  status: Status
+  assignee: Toegewezen aan
+  num_replies:
+    one: '%{count} reactie'
+    other: '%{count} reacties'
+  ago: geleden
+  high: Hoog
+  medium: Gemiddeld
+  low: Laag
+  unknown: Onbekend
+  labels: Labels
+  label_name: Label naam
+  notification_sent_to: 'Een notificatie is verstuurd aan de volgende adressen:'
+  no_notifications_sent: 'Er zijn geen notificaties verzonden'
+  assign_label: Voeg label toe
+  take_ticket_lock_from_user: Neem behandeling over van %{user}
+
+# tickets/_change_priority_form
+  change: Wijzig
+  change_priority: Wijzig prioriteit
+
+# tickets/_change_status_form
+  change_status: Wijzig status
+
+# tickets/_change_assignee_form
+  change_assignee: Ticket toewijzen
+  assign: Toewijzen
+
+# tickets/locks/create
+  ticket_locked_by_somebody_else: Ticket wordt op dit al behandeld door iemand anders
+
+# tickets/merge
+  ticket_has_been_merged_to: "Dit ticket is samengevoegd met ticket #%{ticket_id}."
+  merge: Samenvoegen
+  merge_explanation: "Voeg de geselecteerde tickets samen. Dit zal alle reacties kopiëren naar de oudste geselecteerde ticket en sluit de andere geselecteerde tickets."
+  tickets_have_been_merged: "Tickets zijn samengevoegd."
+
+# replies/new
+  add_reply: Reactie toevoegen
+
+# replies/_form
+  reply: Reactie
+  attach_files: Bestand(en) toevoegen
+  attach_file: Bestand toevoegen
+  send_reply: Verstuur reactie
+  on_date_author_wrote: 'Op %{date} schreef %{author}:'
+  notification_will_be_sent_to: Een notificatie van je reactie wordt verstuurd naar
+  save_as_draft: Als concept opslaan
+  internal_note: Interne reactie
+
+# replies/_reply
+  reply_by: Reactie door
+
+# ticket_mailer/notify_assigned.text.erb
+  ticket_assigned: Ticket aan jou toegewezen
+
+# ticket_mailer/notify_priority_changed.text.erb
+  ticket_priority_changed: Prioriteit van ticket is gewijzigd
+
+# ticket_mailer/notify_status_changed.text.erb
+  ticket_status_modified: Status van ticket is gewijzigd
+  tickets_status_modified: Status van tickets is gewijzigd
+
+# notification_mailer/new_ticket
+  view_new_ticket: Nieuw ticket bekijken
+# notification_mailer/new_reply
+  new_reply: Nieuwe reactie
+  view_new_reply: Nieuwe reactie bekijken
+  your_ticket_has_been_closed: "Uw ticket is gesloten. Reageer op deze e-mail als het probleem niet is opgelost. Voor een nieuw probleem kunt u een losse e-mail sturen."
+  str_is_working_on_your_ticket: "%{str} zal uw ticket behandelen."
+
+# notificantion_mailer/new_account
+  new_account_subject: 'Welkom bij Brimir!'
+
+# attachments/_attachment
+  download: download
+
+# users/new
+  new_user: Gebruiker toevoegen
+
+# users/edit
+  edit_user: Gebruiker wijzigen
+  omniauth_connect_title: Authenticatie via Google
+  omniauth_connect_text: Activeer authenticatie via een Google Account. Daarna kunt u inloggen met uw google account als een alternatief voor e-mailadres en wachtwoord authenticatie.
+  omniauth_connect_google_text: Verbind met Google Account
+  remove_user: Gebruiker verwijderen
+
+# users/index
+  email: E-mailadres
+  role: Rol
+  agent: Medewerker
+  customer: Klant
+
+# users/_form
+  account_settings: Accountinstellingen
+  only_fill_in_passwords_when_modifying: Vul deze twee velden alleen in als het wachtwoord veranderd moet worden.
+  user_is_an_agent: Gebruiker is een medewerker
+  receive_new_ticket_notifications: Ontvang notificaties voor nieuwe tickets
+  email_settings: E-mailinstellingen
+  save: Opslaan
+  access_control: Toegangscontrole
+  have_access_to_label: Gebruiker heeft toegang tot alle tickets met één van deze labels.
+
+# settings/edit
+  change_settings: Wijzig instellingen
+  localization_settings: Localizatie instellingen
+  permissions: Rechten
+  notification_settings: Notificatie instellingen
+  look_and_feel: Uitstraling
+
+# controllers/settings
+  settings_saved: Instellingen opgeslagen
+
+# controllers/attachments
+  file_not_found: Bestand niet gevonden
+
+# controllers/users
+  settings_saved: Instellingen opgeslagen
+  user_added: Gebruiker toegevoegd
+  user_removed: Gebruiker verwijderd
+
+# controllers/tickets
+  ticket_added: Ticket toegevoegd
+  ticket_added_public: Uw aanvraag is verzonden naar de relevante service, u krijgt zo spoedig mogelijk bericht
+  form_validation_error: Ongeldig formulier. Vul het formululier correct in alstublieft
+  captcha_error: Los de captcha op alstublieft
+  ticket_updated: Ticket gewijzigd
+  access_denied: Toegang geweigerd
+
+# controllers/tickets/deleted
+  trash_emptied: Alle tickets zijn uit de prullenbak verwijderd
+
+# controllers/replies
+  reply_added: Reactie toegevoegd
+  draft_saved: Concept opgeslagen
+
+# controllers/omniauth
+  already_linked_accounts: Al met een Google Account verbonden
+  successfully_linked_account: Succesvol verbonden met Google Account
+  not_linked_account_cant_login: Er is nog geen gebruiker verbonden met deze provider. Log eerst in en verbind via uw persoonlijke instellingen scherm.
+  third_party_failure: Fout tijdens authenticatie. Heeft u "Contacts API" en "Google+ API" aangezet via de Google API console?
+
+# rules/index
+  new_rule: Nieuwe regel
+
+# rules/edit
+  edit_rule: Regel wijzigen
+  delete_rule: Regel verwijderen
+  are_you_sure: Weet u het zeker?
+
+# controllers/rules
+  rule_added: Regel toegevoegd
+  rule_modified: Regel gewijzigd
+  rule_deleted: Regel verwijderd
+
+# email_addresses/index
+  new_email_address: Nieuw uitgaand e-mailadres
+  email_addresses: E-mailadressen voor uitgaande e-mails
+
+# email_addresses/edit
+  modify_email_address: Wijzig uitgaand e-mailadres
+
+# email_addresses/new
+  verification_mail_will_be_sent: Zorg dat dit e-mailadres correct doorstuurd naar Brimir. Een automatische verificatie e-mail wordt verstuurd nadat u op opslaan klikt. Alleen geverifieerde e-mailadressen kunnen gebruikt worden voor uitgaande e-mail.
+  mark_spam_spf: Brimir mails worden mogelijk als spam gemarkeerd als deze server niet wordt toegevoegd aan het SPF DNS record van het bovenstaande e-mailadres.
+
+# email_templates/index
+  already_active_template: Er is al een actief sjabloon voor een %{kind} e-mail, het instellen van de huidge optie zal de ander ongedaan maken.
+  new_email_template: Nieuw e-mailsjabloon
+  email_templates: E-mailsjablonen
+  deleting_this_item_will_unset_option: 'Het verwijderen van dit sjabloon zal de volgende optie ongedaan maken:'
+  set_active: Activeer
+  status: Toestand
+
+# email_templates/edit
+  modify_email_template: Wijzig e-mailsjabloon
+  tooltip: Blokhaken binnen het tekstveld worden automatisch vervangen door de nodige waardes.
+
+# controllers/email_addresses
+  email_address_modified: E-mailadres gewijzigd
+  email_address_added: E-mailadres toevoegd
+  email_address_removed: Email address verwijderd
+
+# controllers/email_templates
+  email_template_modified: E-mailsjabloon gewijzigd
+  email_template_added: E-mailsjabloon toevoegd
+  email_template_removed: Emailsjabloon verwijderd
+
+  activerecord:
+    attributes:
+      user:
+        name: Naam
+        email: E-mailadres
+        password: Wachtwoord
+        password_confirmation: Wachtwoord bevestiging
+        signature: E-mailhandtekening
+        remember_me: Onthouden
+        label_ids: Labels
+        locale: Taal
+        time_zone: Tijdzone
+        per_page: Tickets per pagina
+        schedule_enabled_false: Altijd 24/7/365
+        schedule_enabled_true: Werk kan wachten, alleen tijdens mijn diensturen!
+        prefer_plain_text: Verstuur en ontvang platte tekst reacties
+        include_quote_in_reply: Voeg quote van originele bericht toe aan reactie
+
+      ticket:
+        from: Van e-mailadres
+        subject: Onderwerp
+        content: Inhoud
+        status: Status
+        statuses:
+          open: Open
+          closed: Gesloten
+          deleted: Verwijderd
+          waiting: Afwachtend
+        priority: Prioriteit
+        assignee_id: Toegewezen aan
+        created_at: Aangemaakt op
+        to: Aan gevalideerd e-mailadres
+        orig_to: Aan e-mailadres
+        orig_cc: CC e-mailadres
+
+      reply:
+        from: Van e-mailadres
+
+      rule:
+        filter_field: Veld
+        filter_operation: Operatie
+        filter_value: Waarde
+        filter_operations:
+          contains: bevat
+          equals: is gelijk aan
+        action_operation: Uit te voeren actie
+        action_operations:
+          assign_label: Voeg label toe
+          notify_user: Stuur notificatie aan
+          change_status: Wijzig status in
+          change_priority: Wijzig prioriteit in
+          assign_user: Toewijzen aan
+
+      email_address:
+        email: E-mailadres
+        name: Naam
+        default: Gebruik als standaard uitgaand e-mailadres
+        verification_token: Geverifieerd
+
+      email_template:
+        name: Sjabloon naam
+        from: Van
+        kind: Soort
+        message: Bericht
+        kinds:
+          user_welcome:
+            template_name: Standaard gebruikers welkom
+            message: |
+              <div>
+              Beste [name],
+              <br />
+              <br />
+              Er is voor u een account aangemaakt bij voor Brimir!
+              <br />
+              <br />
+              Om in te kunnen loggen heeft u de volgende informatie nodig.
+              <br />
+              E-mail: [email]
+              <br />
+              Password: [password]
+              <br />
+              <br />
+              <strong>IMPORTANT!</strong>
+              <br />
+              Deze informatie wordt eenmalig verstrekt, bewaar deze goed!
+              <br />
+              <br />
+              Wachtwoord vergeten of kwijt? Herstel uw wachtwoord op:
+              <br />
+              http://[domain]/users/password/new
+              <br />
+              <br />
+              Met vriendelijke groet,
+              <br />
+              Webmaster [domain]
+              <br />
+              <br />
+              *** Dit is een automatisch gegenereerde e-mail, reageer alstublieft niet ***"
+              </div>
+
+          ticket_received:
+            template_name: Standaard ticket received
+            message: |
+              <div>
+              Beste [name],
+              <br />
+              <br />
+              Op [created_at], schreef u:
+              [content]
+              <br />
+              U ontvangt deze e-mail als bevestiging dat u ticket is ontvangen met onder het nummer [id] en zo spoedig mogelijk in behandeling zal worden genomen.
+              Met vriendelijke groet,
+              <br />
+              <br />
+              Webmaster [domain]
+              <br />
+              <br />
+              </div>
+
+      tenant:
+        default_locale: Standaard taal
+        ignore_user_agent_locale: Negeer voorkeur taal van browser
+        default_time_zone: Standaard tijdzone
+        share_drafts: Deel concepten met andere medewerkers
+        first_reply_ignores_notified_agents: Geen notificatie van eerste reactie aan andere agents voor toegewezen tickets
+        notify_client_when_ticket_is_assigned_or_closed: Stuur een notificatie naar de klant als zijn ticket toegekend of gesloten wordt.
+        notify_client_when_ticket_is_created: Stuur een notificatie naar de klant, wanneer zijn nieuw aangemaakte ticket is ontvangen.
+        notify_user_when_account_is_created: Stuur de gebruiker een notificatie, wanneer een account is aangemaakt.
+        stylesheet_url: Voeg de locatie van uw eigen stylesheet toe.
